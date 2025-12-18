@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Marmiton Reloaded - Recette</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5.3.8 -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <style>
+    body { background-color: #f8f9fa; }
+
+    .recipe-hero {
+      background: #fff;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    .recipe-hero img {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+    }
+
+    .badge-soft {
+      background: rgba(13,110,253,0.10);
+      color: #0d6efd;
+      border: 1px solid rgba(13,110,253,0.25);
+    }
+
+    .section-card {
+      background: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+    }
+
+    .ingredient-item {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: .6rem 0;
+      border-bottom: 1px dashed #e9ecef;
+    }
+    .ingredient-item:last-child { border-bottom: none; }
+
+    .step {
+      display: flex;
+      gap: 1rem;
+      padding: .8rem 0;
+      border-bottom: 1px solid #f1f3f5;
+    }
+    .step:last-child { border-bottom: none; }
+
+    .step-number {
+      width: 2.25rem;
+      height: 2.25rem;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      background: #0d6efd;
+      color: #fff;
+      flex: 0 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm mb-4">
+    <div class="container py-3 d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center gap-2">
+        <span class="fs-4">🍳</span>
+        <strong class="fs-5">Marmiton Reloaded</strong>
+      </div>
+
+      <a href="index.html" class="btn btn-outline-secondary btn-sm">
+        ← Retour aux recettes
+      </a>
+    </div>
+  </header>
+
+  <main class="container pb-5">
+
+    <!-- HERO -->
+    <div class="recipe-hero mb-4">
+      <img src="../images/image1.jpg" alt="Spaghetti bolognaise">
+
+      <div class="p-4 p-md-5">
+        <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+          <span class="badge badge-soft rounded-pill px-3 py-2">🔥 Difficulté : Facile</span>
+          <span class="badge bg-light text-dark rounded-pill px-3 py-2 border">⏱️ Préparation : 15 min</span>
+          <span class="badge bg-light text-dark rounded-pill px-3 py-2 border">👥 4 personnes</span>
+        </div>
+
+        <h1 class="fw-bold mb-2">Spaghetti bolognaise</h1>
+
+        <p class="text-muted mb-0">
+          Une bolognaise généreuse, parfumée, et ultra réconfortante.
+          Parfaite pour un repas simple qui fait plaisir à tout le monde.
+        </p>
+      </div>
+    </div>
+
+    <!-- CONTENU -->
+    <div class="row g-4">
+
+      <!-- Col gauche -->
+      <div class="col-12 col-lg-8">
+
+        <!-- Instructions -->
+        <section class="section-card p-4 p-md-5 mb-4">
+          <h2 class="h4 fw-bold mb-3">👨‍🍳 Étapes</h2>
+
+          <div class="step">
+            <div class="step-number">1</div>
+            <div>
+              <div class="fw-semibold">Préparer la base</div>
+              <div class="text-muted">Émincer l’oignon, râper l’ail, faire revenir 5 min dans un filet d’huile d’olive.</div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">2</div>
+            <div>
+              <div class="fw-semibold">Cuire la viande</div>
+              <div class="text-muted">Ajouter le bœuf haché, saler/poivrer, faire dorer 8 à 10 min.</div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">3</div>
+            <div>
+              <div class="fw-semibold">Mijoter la sauce</div>
+              <div class="text-muted">Ajouter tomates, concentré, herbes. Laisser mijoter 20 min à feu doux.</div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">4</div>
+            <div>
+              <div class="fw-semibold">Cuire les pâtes</div>
+              <div class="text-muted">Cuire les spaghetti al dente, égoutter, mélanger avec la sauce.</div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">5</div>
+            <div>
+              <div class="fw-semibold">Servir</div>
+              <div class="text-muted">Ajouter parmesan, basilic, et un tour de moulin à poivre.</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Conseils -->
+        <section class="section-card p-4 p-md-5">
+          <h2 class="h4 fw-bold mb-3">✨ Conseils</h2>
+          <ul class="mb-0 text-muted">
+            <li>Pour une sauce plus riche : un trait de lait ou une noisette de beurre en fin de cuisson.</li>
+            <li>Pour plus de goût : ajouter une pointe de sauce soja ou un peu de vin rouge.</li>
+            <li>Si tu aimes épicé : piment en flocons dans la sauce.</li>
+          </ul>
+        </section>
+
+      </div>
+
+      <!-- Col droite -->
+      <div class="col-12 col-lg-4">
+
+        <!-- Ingrédients -->
+        <aside class="section-card p-4 p-md-4 mb-4">
+          <h2 class="h5 fw-bold mb-3">🧾 Ingrédients</h2>
+
+          <div class="ingredient-item">
+            <span>Spaghetti</span>
+            <span class="text-muted">400 g</span>
+          </div>
+          <div class="ingredient-item">
+            <span>Bœuf haché</span>
+            <span class="text-muted">500 g</span>
+          </div>
+          <div class="ingredient-item">
+            <span>Tomates concassées</span>
+            <span class="text-muted">400 g</span>
+          </div>
+          <div class="ingredient-item">
+            <span>Oignon</span>
+            <span class="text-muted">1</span>
+          </div>
+          <div class="ingredient-item">
+            <span>Ail</span>
+            <span class="text-muted">2 gousses</span>
+          </div>
+          <div class="ingredient-item">
+            <span>Concentré de tomate</span>
+            <span class="text-muted">1 c.à.s</span>
+          </div>
+          <div class="ingredient-item">
+            <span>Huile d’olive</span>
+            <span class="text-muted">2 c.à.s</span>
+          </div>
+          <div class="ingredient-item">
+            <span>Herbes (origan/basilic)</span>
+            <span class="text-muted">au goût</span>
+          </div>
+        </aside>
+
+        <!-- Infos rapides -->
+        <aside class="section-card p-4 p-md-4">
+          <h2 class="h5 fw-bold mb-3">📌 Infos rapides</h2>
+
+          <div class="d-flex justify-content-between py-2 border-bottom">
+            <span class="text-muted">Temps total</span>
+            <span class="fw-semibold">45 min</span>
+          </div>
+
+          <div class="d-flex justify-content-between py-2 border-bottom">
+            <span class="text-muted">Budget</span>
+            <span class="fw-semibold">€</span>
+          </div>
+
+          <div class="d-flex justify-content-between py-2">
+            <span class="text-muted">Type</span>
+            <span class="fw-semibold">Plat</span>
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="py-4 bg-white border-top">
+    <div class="container text-center text-muted">
+      © 2025 – Marmiton Reloaded
+    </div>
+  </footer>
+
+</body>
+</html>
