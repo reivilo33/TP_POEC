@@ -1,6 +1,7 @@
 MINI PROJET : Marmiton RELOADED
 
 Objectif : Creer un site internet de recette
-Génération du back end avec FLASK
+Génération du BACK END avec FLASK
 
 Contraintes :
+Creer un fichier FRONT END en .html
