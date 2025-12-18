@@ -1,5 +1,5 @@
 MINI PROJET : Marmiton RELOADED
 
-Objectif :
+Objectif : Creer un site internet
 
 Contraintes :
