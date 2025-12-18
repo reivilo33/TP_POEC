@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Marmiton Reloaded</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5.3.8 -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .recipe-card {
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      height: 100%;
+    }
+
+    .recipe-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .recipe-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .recipe-meta {
+      font-size: 0.9rem;
+      color: #6c757d;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm mb-5">
+    <div class="container py-4 text-center">
+      <h1 class="fw-bold mb-1">🍳 Marmiton Reloaded</h1>
+      <p class="text-muted mb-0">
+        Des recettes simples, rapides et gourmandes
+      </p>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="container">
+
+    <div class="row g-4">
+
+      <!-- Carte recette 1 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <a href="recipe.html" class="text-decoration-none text-dark">
+          <div class="card recipe-card">
+            <img src="../images/image1.jpg" class="card-img-top" alt="Spaghetti bolognaise">
+            <div class="card-body">
+              <h5 class="card-title">Spaghetti bolognaise</h5>
+              <div class="recipe-meta">
+                <div>⏱️ 45 min</div>
+                <div>🔥 Difficulté : Facile</div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Carte recette 2 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <a href="recipe.html" class="text-decoration-none text-dark">
+          <div class="card recipe-card">
+            <img src="../images/image2.jpg" class="card-img-top" alt="Poulet curry">
+            <div class="card-body">
+              <h5 class="card-title">Poulet au curry</h5>
+              <div class="recipe-meta">
+                <div>⏱️ 35 min</div>
+                <div>🔥 Difficulté : Moyenne</div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Carte recette 3 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <a href="recipe.html" class="text-decoration-none text-dark">
+          <div class="card recipe-card">
+            <img src="../images/image3.jpg" class="card-img-top" alt="Tarte aux pommes">
+            <div class="card-body">
+              <h5 class="card-title">Tarte aux pommes</h5>
+              <div class="recipe-meta">
+                <div>⏱️ 1 h</div>
+                <div>🔥 Difficulté : Facile</div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Carte recette 4 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <a href="recipe.html" class="text-decoration-none text-dark">
+          <div class="card recipe-card">
+            <img src="../images/image4.jpg" class="card-img-top" alt="Riz cantonais">
+            <div class="card-body">
+              <h5 class="card-title">Riz cantonais</h5>
+              <div class="recipe-meta">
+                <div>⏱️ 25 min</div>
+                <div>🔥 Difficulté : Facile</div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Carte recette 5 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <a href="recipe.html" class="text-decoration-none text-dark">
+          <div class="card recipe-card">
+            <img src="../images/image5.jpg" class="card-img-top" alt="Bœuf bourguignon">
+            <div class="card-body">
+              <h5 class="card-title">Bœuf bourguignon</h5>
+              <div class="recipe-meta">
+                <div>⏱️ 3 h</div>
+                <div>🔥 Difficulté : Difficile</div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-5 py-4 bg-white border-top">
+    <div class="container text-center text-muted">
+      © 2025 – Marmiton Reloaded
+    </div>
+  </footer>
+
+</body>
+</html>
