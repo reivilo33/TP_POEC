@@ -1,9 +1,9 @@
 MINI PROJET : Marmiton RELOADED
 
-Objectif : Creer un site internet de recette
+OBJECTIF : Creer un site internet de recette
 Génération du BACK END avec FLASK
 
-Structure du projet :
+STRUCTURE du projet :
 mon_projet/
 ├── app.py            # Point d'entrée de l'application
 ├── config.py         # Configuration de la base de données
@@ -12,6 +12,6 @@ mon_projet/
 │   └── index.html    # Interface utilisateur
 └── recettes.db       # 
 
-Contraintes :
+CONTRAINTES :
 Creer un fichier FRONT END en .html
 Generer une bd avec sqlite3
