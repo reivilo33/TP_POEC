@@ -40,7 +40,7 @@ recettes = [
         
     ("Omelette", 
     "5 min", 
-    "omelette.png", 
+    "omelette.jpg", 
     "facile",
     '{1 : 3, 2 : 10, 3 : 10}',
     str({
@@ -50,7 +50,7 @@ recettes = [
     ),
     ("Pates au beurre",
     "15 min",
-    "pates_au_beurre.png",
+    "pates_beurre.jpg",
     "moyenne",
     '{4 : 100, 5 : 10, 6 : 50}',
     str({

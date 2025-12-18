@@ -75,85 +75,33 @@
     <main class="container">
         <div class="row g-4">
 
-            <!-- Carte recette 1 -->
-            <div class="col-12 col-sm-6 col-lg-4">
-                <a href="show.html" class="text-decoration-none text-dark">
-                    <div class="card recipe-card">
-                        <img src="../images/image1.jpg" class="card-img-top" alt="Spaghetti bolognaise">
-                        <div class="card-body">
-                            <h5 class="card-title">Spaghetti bolognaise</h5>
-                            <div class="recipe-meta">
-                                <div>⏱️ 45 min</div>
-                                <div>🔥 Difficulté : Facile</div>
+            <div class="row g-4">
+
+                {% for recette in recettes %}
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <a href="recettes/{{recette.id}}" class="text-decoration-none text-dark">
+                        <div class="card recipe-card">
+                            <img src="{{ url_for('static', filename='images/' ~ recette.image) }}" class="card-img-top" alt="{{ recette.nom }}">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ recette.nom }}</h5>
+                                <div class="recipe-meta">
+                                    <div>⏱️ {{ recette.temps }}</div>
+                                    <div>🔥 Difficulté : {{ recette.difficulte }}</div>
+                                </div>
                             </div>
                         </div>
+                    </a>
+                </div>
+                {% else %}
+                <div class="col-12">
+                    <div class="alert alert-secondary mb-0">
+                        Aucune recette pour le moment.
                     </div>
-                </a>
+                </div>
+                {% endfor %}
+
             </div>
 
-            <!-- Carte recette 2 -->
-            <div class="col-12 col-sm-6 col-lg-4">
-                <a href="show.html" class="text-decoration-none text-dark">
-                    <div class="card recipe-card">
-                        <img src="../images/image2.jpg" class="card-img-top" alt="Poulet au curry">
-                        <div class="card-body">
-                            <h5 class="card-title">Poulet au curry</h5>
-                            <div class="recipe-meta">
-                                <div>⏱️ 35 min</div>
-                                <div>🔥 Difficulté : Moyenne</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Carte recette 3 -->
-            <div class="col-12 col-sm-6 col-lg-4">
-                <a href="show.html" class="text-decoration-none text-dark">
-                    <div class="card recipe-card">
-                        <img src="../images/image3.jpg" class="card-img-top" alt="Tarte aux pommes">
-                        <div class="card-body">
-                            <h5 class="card-title">Tarte aux pommes</h5>
-                            <div class="recipe-meta">
-                                <div>⏱️ 1 h</div>
-                                <div>🔥 Difficulté : Facile</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Carte recette 4 -->
-            <div class="col-12 col-sm-6 col-lg-4">
-                <a href="show.html" class="text-decoration-none text-dark">
-                    <div class="card recipe-card">
-                        <img src="../images/image4.jpg" class="card-img-top" alt="Riz cantonais">
-                        <div class="card-body">
-                            <h5 class="card-title">Riz cantonais</h5>
-                            <div class="recipe-meta">
-                                <div>⏱️ 25 min</div>
-                                <div>🔥 Difficulté : Facile</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Carte recette 5 -->
-            <div class="col-12 col-sm-6 col-lg-4">
-                <a href="show.html" class="text-decoration-none text-dark">
-                    <div class="card recipe-card">
-                        <img src="../images/image5.jpg" class="card-img-top" alt="Bœuf bourguignon">
-                        <div class="card-body">
-                            <h5 class="card-title">Bœuf bourguignon</h5>
-                            <div class="recipe-meta">
-                                <div>⏱️ 3 h</div>
-                                <div>🔥 Difficulté : Difficile</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
 
         </div>
     </main>
