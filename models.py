@@ -10,7 +10,7 @@ from config import db, ma
 class Ingredient(db.Model):
     __tablename__ = "ingredients"
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(32))
+    nom = db.Column(db.String(32))
     image = db.Column(db.String(32))
     prix = db.Column(db.Float)
     categorie = db.Column(db.String(32))
@@ -25,7 +25,7 @@ class IngredientSchema(ma.SQLAlchemyAutoSchema):
 class Recette(db.Model):
     __tablename__ = "recettes"
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(32))
+    nom = db.Column(db.String(32))
     temps = db.Column(db.String(32))
     image = db.Column(db.String(32))
     difficulte = db.Column(db.String(32))
