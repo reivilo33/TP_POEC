@@ -10,7 +10,7 @@ mon_projet/
 ├── models.py         # Définition de la base SQLite
 ├── templates/
 │   └── index.html    # Interface utilisateur
-└── recettes.db       # 
+└── recettes.db       # Generation de la db
 
 CONTRAINTES :
 Creer un fichier FRONT END en .html
